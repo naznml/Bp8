@@ -146,6 +146,7 @@
     }
 
     .section-panel {
+      display: none;
       background: var(--card);
       border: 1px solid var(--border);
       border-radius: 22px;
@@ -541,6 +542,19 @@
       .quiz-count {
         align-self: flex-start;
       }
+    }
+
+
+    /* Навигациялық бөлім экранда көрінбейді, бірақ бөлімдер сайт ішінде сақталады */
+    .section-panel {
+      display: none !important;
+      visibility: hidden !important;
+      height: 0 !important;
+      overflow: hidden !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      border: 0 !important;
+      box-shadow: none !important;
     }
   </style>
 </head>
@@ -3476,30 +3490,30 @@
             <section id="chapter-2-2" class="chapter">
         <div class="chapter-card">
           <div class="chapter-header">
-            <h2>2.2. Сақтар мен ғұндар империяларының мәдени-тәрбие дәстүрлері</h2>
-            <p>Жауынгерлік тәрбие, еңбек, дене, эстетикалық тәрбие және әскери-көшпелі тұрмыс</p>
+            <h2>2.2. Сақтар мен ғұндар дәуіріндегі тәрбие дәстүрлері</h2>
+            <p>Дене тәрбиесі, еңбек тәрбиесі, эстетикалық талғам, ерлікке баулу және көшпелі өмірге бейімдеу</p>
           </div>
 
           <div class="important">
             <h3>Бұл бөлімде қарастырылады</h3>
             <ul>
-              <li>Сақтар империясының тарихи аумағы мен құрамына кірген тайпалар.</li>
-              <li>Сақтардың әскери-көшпелі тұрмысы, металл өңдеуі және “аң стилі” өнері.</li>
-              <li>Сақтардағы дене, еңбек және эстетикалық тәрбие принциптері.</li>
-              <li>Заратуштра және “Авеста” кітабының тәлім-тәрбиелік мәні.</li>
-              <li>Ғұндардың әскери-жауынгерлік өнері және ұрпақ тәрбиесі.</li>
-              <li>Ғұндардың Еуропаға жорығы және тарихи-мәдени ықпалы.</li>
+              <li>Сақтар мен ғұндар дәуіріндегі тәрбиенің әскери-көшпелі өмір салтымен байланысы.</li>
+              <li>Жас ұрпақты дене, еңбек және эстетикалық тәрбие арқылы қалыптастыру.</li>
+              <li>Жылқыны қадірлеу, мал бағу, қару-жарақ және зергерлік өнердің тәрбиелік мәні.</li>
+              <li>Ғұндардағы ержүректік, алғырлық, ептілік және әскери-жауынгерлік тәрбие.</li>
+              <li>Көшпелі тұрмыстағы шыдамдылық, суыққа, аштыққа, шөлге төзімділік.</li>
+              <li>Көне дәуір тәрбиесінің кейінгі халықтық педагогикамен сабақтастығы.</li>
             </ul>
           </div>
 
           <div class="match-box">
             <h3>КТ тақырыптарымен байланысы</h3>
             <div class="tag-list">
-              <span class="tag">Тәрбие мазмұны</span>
+              <span class="tag">Тәрбиенің мәні</span>
               <span class="tag">Дене тәрбиесі</span>
               <span class="tag">Еңбек тәрбиесі</span>
               <span class="tag">Эстетикалық тәрбие</span>
-              <span class="tag">Тұлға қалыптастыру</span>
+              <span class="tag">Тұлғаның қалыптасуы</span>
             </div>
           </div>
         </div>
@@ -3510,107 +3524,207 @@
             <span class="quiz-count">12 сұрақ</span>
           </div>
 
-          <div class="question" data-answer="A">
-            <h4>1. Сақтар империясы шамамен қай кезеңде қазіргі Орта Азия мен Қазақстан аумағын мекендеді?</h4>
+          <div class="question" data-answer="B">
+            <h4>1. Сақтар дәуіріндегі тәрбие мазмұны қандай өмір салтымен тығыз байланысты болды?</h4>
             <div class="options">
-              <label class="option"><input type="radio" name="q146" value="A"> A) б.з.д. VII–III ғасырлар аралығында</label>
-              <label class="option"><input type="radio" name="q146" value="B"> B) б.з.д. VI–II ғасырлар аралығында</label>
-              <label class="option"><input type="radio" name="q146" value="C"> C) б.з.д. V–I ғасырлар аралығында</label>
-              <label class="option"><input type="radio" name="q146" value="D"> D) б.з.д. IV–I ғасырлар аралығында</label>
-              <label class="option"><input type="radio" name="q146" value="E"> E) б.з.д. III–I ғасырлар аралығында</label>
+              <label class="option"><input type="radio" name="q146" value="A"> A) қалалық қолөнер өмірімен</label>
+              <label class="option"><input type="radio" name="q146" value="B"> B) әскери-көшпелі тұрмыспен</label>
+              <label class="option"><input type="radio" name="q146" value="C"> C) медреселік оқу жүйесімен</label>
+              <label class="option"><input type="radio" name="q146" value="D"> D) отырықшы егіншілік кәсібімен</label>
+              <label class="option"><input type="radio" name="q146" value="E"> E) сауда-қалалық қатынаспен</label>
             </div>
             <div class="explanation">
-              <strong>Дұрыс жауап: A.</strong>
-              Кітапта сақтар империясы біздің жыл санау дәуірімізге дейінгі VII–III ғасырлар аралығында қазіргі Орта Азия мен Қазақстан аумағын мекендегені көрсетіледі.
+              <strong>Дұрыс жауап: B.</strong>
+              Сақтардағы тәрбие олардың әскери-көшпелі тұрмысымен, мал бағумен, жылқыны қадірлеумен және жауынгерлік өмір салтымен байланысты болды.
               <div class="source">Дереккөз: Қалиев С. Этнопедагогика.</div>
             </div>
           </div>
 
           <div class="question" data-answer="D">
-            <h4>2. Сақтар империясының құрамына кірген тайпалар қатарына қайсысы жатады?</h4>
+            <h4>2. Сақтар ұрпақ тәрбиесінде қандай негізгі тәрбие бағыттарын ұстанған?</h4>
             <div class="options">
-              <label class="option"><input type="radio" name="q147" value="A"> A) үйсін, қаңлы, жу-жу, дунку</label>
-              <label class="option"><input type="radio" name="q147" value="B"> B) қыпшақ, қарлұқ, түркеш, ұйғыр</label>
-              <label class="option"><input type="radio" name="q147" value="C"> C) татар, башқұрт, қазақ, қарақалпақ</label>
-              <label class="option"><input type="radio" name="q147" value="D"> D) массагет, исседон, савромат, аримаспы</label>
-              <label class="option"><input type="radio" name="q147" value="E"> E) оғыз, қимақ, хазар, қарахан</label>
+              <label class="option"><input type="radio" name="q147" value="A"> A) діни, тілдік және құқықтық тәрбие</label>
+              <label class="option"><input type="radio" name="q147" value="B"> B) ақыл-ой, имандылық және отбасы тәрбиесі</label>
+              <label class="option"><input type="radio" name="q147" value="C"> C) патриоттық, экологиялық және құқықтық тәрбие</label>
+              <label class="option"><input type="radio" name="q147" value="D"> D) дене, еңбек және эстетикалық тәрбие</label>
+              <label class="option"><input type="radio" name="q147" value="E"> E) адамгершілік, тіл және өнер тәрбиесі</label>
             </div>
             <div class="explanation">
               <strong>Дұрыс жауап: D.</strong>
-              Сақтар империясының құрамына массагет, исседон, савромат, аримаспы, дайлар, турлар, арийлер және басқа тайпалар кіргені айтылады.
+              Мәтінде сақтар өз ұрпақтарын дене, еңбек және эстетикалық тәрбие принциптері негізінде тәрбиелегені көрсетіледі.
               <div class="source">Дереккөз: Қалиев С. Этнопедагогика.</div>
             </div>
           </div>
 
-          <div class="question" data-answer="B">
-            <h4>3. Сақ көсемдері Кир, Дарий, Александр Македонскийге қарсы күрес барысында қандай тұрмыс қалыптастырды?</h4>
+          <div class="question" data-answer="A">
+            <h4>3. Сақтарда эстетикалық тәрбиенің көрінісі ретінде не ерекше аталады?</h4>
             <div class="options">
-              <label class="option"><input type="radio" name="q148" value="A"> A) отырықшы-егіншілік тұрмыс</label>
-              <label class="option"><input type="radio" name="q148" value="B"> B) әскери-көшпелі тұрмыс</label>
-              <label class="option"><input type="radio" name="q148" value="C"> C) сауда-қалалық тұрмыс</label>
-              <label class="option"><input type="radio" name="q148" value="D"> D) діни-медреселік тұрмыс</label>
-              <label class="option"><input type="radio" name="q148" value="E"> E) қолөнер-өндірістік тұрмыс</label>
+              <label class="option"><input type="radio" name="q148" value="A"> A) аң стиліндегі зергерлік бұйымдар мен әшекейлер</label>
+              <label class="option"><input type="radio" name="q148" value="B"> B) медреседегі жазба оқу құралдары</label>
+              <label class="option"><input type="radio" name="q148" value="C"> C) шешендік сөз бен билер дәстүрі</label>
+              <label class="option"><input type="radio" name="q148" value="D"> D) діни жырлар мен сопылық өсиеттер</label>
+              <label class="option"><input type="radio" name="q148" value="E"> E) жазба әдебиет пен логикалық трактаттар</label>
             </div>
             <div class="explanation">
-              <strong>Дұрыс жауап: B.</strong>
-              Мәтінде Африсиап пен Томирис сияқты сақ көсемдері ірі мемлекеттерге қарсы күрес жүргізу барысында әскери-көшпелі тұрмысты қалыптастырғаны көрсетіледі.
+              <strong>Дұрыс жауап: A.</strong>
+              Сақтардың металл өңдеп, “аң стилі” үлгісінде зергерлік бұйымдар, қару-жарақтар мен киімдер жасауы эстетикалық талғам мен көркемдік тәрбиенің көрінісі ретінде түсіндіріледі.
               <div class="source">Дереккөз: Қалиев С. Этнопедагогика.</div>
             </div>
           </div>
 
           <div class="question" data-answer="E">
-            <h4>4. Сақтардың әлемдік маңызы зор өнер үлгісі қалай аталады?</h4>
+            <h4>4. Жылқыны қадірлеу мен мал бағу сақтар тәрбиесінде қандай мазмұнмен байланысты?</h4>
             <div class="options">
-              <label class="option"><input type="radio" name="q149" value="A"> A) тас жазу үлгісі</label>
-              <label class="option"><input type="radio" name="q149" value="B"> B) шешендік сөз үлгісі</label>
-              <label class="option"><input type="radio" name="q149" value="C"> C) қобыз күйі үлгісі</label>
-              <label class="option"><input type="radio" name="q149" value="D"> D) дала өрнегі үлгісі</label>
-              <label class="option"><input type="radio" name="q149" value="E"> E) аң стилі үлгісі</label>
+              <label class="option"><input type="radio" name="q149" value="A"> A) діни сенім мен рәсімдік тәрбие мазмұнымен</label>
+              <label class="option"><input type="radio" name="q149" value="B"> B) жазба мәдениет пен білім беру мазмұнымен</label>
+              <label class="option"><input type="radio" name="q149" value="C"> C) құқықтық тәртіп пен қоғамдық басқару мазмұнымен</label>
+              <label class="option"><input type="radio" name="q149" value="D"> D) тілдік бірлік пен шешендік өнер мазмұнымен</label>
+              <label class="option"><input type="radio" name="q149" value="E"> E) еңбекке баулу және дене шынықтыру мазмұнымен</label>
             </div>
             <div class="explanation">
               <strong>Дұрыс жауап: E.</strong>
-              Сақтар металл өңдеп, әлемдік маңызы зор “сақтардың аң стилі” атты зергерлік бұйымдар, қару-жарақтар мен киімдер жасаған.
+              Жылқыны қадірлеу, мал бағу, көшпелі өмірге бейімделу жас ұрпақты еңбекке, төзімділікке және дене шынықтыруға тәрбиелеумен байланысады.
               <div class="source">Дереккөз: Қалиев С. Этнопедагогика.</div>
             </div>
           </div>
 
           <div class="question" data-answer="C">
-            <h4>5. Сақтар өз ұрпақтарын қандай тәрбие принциптері негізінде өсірген?</h4>
+            <h4>5. Көне діни-рухани ойлар сақтар тәрбиесінде қандай мәнге ие болды?</h4>
             <div class="options">
-              <label class="option"><input type="radio" name="q150" value="A"> A) адамгершілік, патриоттық, ақыл-ой тәрбиесі</label>
-              <label class="option"><input type="radio" name="q150" value="B"> B) еңбек, имандылық, табиғатты аялау тәрбиесі</label>
-              <label class="option"><input type="radio" name="q150" value="C"> C) дене, еңбек және эстетикалық тәрбие</label>
-              <label class="option"><input type="radio" name="q150" value="D"> D) өнер, білім және тіл тәрбиесі</label>
-              <label class="option"><input type="radio" name="q150" value="E"> E) әскери, діни және отбасылық тәрбие</label>
+              <label class="option"><input type="radio" name="q150" value="A"> A) әскери басқару және жауынгерлік тәртіп мәніне</label>
+              <label class="option"><input type="radio" name="q150" value="B"> B) шаруашылық жүргізу және кәсіптік дағды мәніне</label>
+              <label class="option"><input type="radio" name="q150" value="C"> C) рухани-танымдық және тәлім-тәрбиелік мәнге</label>
+              <label class="option"><input type="radio" name="q150" value="D"> D) тілдік мұра және шешендік өнер мәніне</label>
+              <label class="option"><input type="radio" name="q150" value="E"> E) тарихи дерек және этностық даму мәніне</label>
             </div>
             <div class="explanation">
               <strong>Дұрыс жауап: C.</strong>
-              Сақтар жылқыны қадірлеп, мал баққан, осы тұрмыс-тіршілікке байланысты ұрпақтарын дене, еңбек және эстетикалық тәрбие принциптері негізінде тәрбиелеген.
+              Көне дәуірдегі рухани ойлар жас ұрпаққа танымдық бағыт беріп, тәлім-тәрбиелік мазмұнды күшейтетін құрал ретінде қарастырылады.
               <div class="source">Дереккөз: Қалиев С. Этнопедагогика.</div>
             </div>
           </div>
 
-          <div class="question" data-answer="A">
-            <h4>6. “Авеста” кітабын жазған данышпан ретінде кім аталады?</h4>
+          <div class="question" data-answer="B">
+            <h4>6. Ғұндарда ұрпақ тәрбиесінің негізгі бағыты қандай болды?</h4>
             <div class="options">
-              <label class="option"><input type="radio" name="q151" value="A"> A) Заратуштра</label>
-              <label class="option"><input type="radio" name="q151" value="B"> B) Ксенофонт</label>
-              <label class="option"><input type="radio" name="q151" value="C"> C) Аммиан Марцеллин</label>
-              <label class="option"><input type="radio" name="q151" value="D"> D) Африсиап</label>
-              <label class="option"><input type="radio" name="q151" value="E"> E) Томирис</label>
+              <label class="option"><input type="radio" name="q151" value="A"> A) діни білім мен медреселік оқу</label>
+              <label class="option"><input type="radio" name="q151" value="B"> B) ержүректік, алғырлық, ептілікке баулу</label>
+              <label class="option"><input type="radio" name="q151" value="C"> C) шешендік өнер мен сөз мәдениеті</label>
+              <label class="option"><input type="radio" name="q151" value="D"> D) жазба мұра мен әдеби талғам</label>
+              <label class="option"><input type="radio" name="q151" value="E"> E) отбасылық рәсім мен салт сақтау</label>
             </div>
             <div class="explanation">
-              <strong>Дұрыс жауап: A.</strong>
-              Мәтінде Тәңір дінінің негізін салған данышпан Заратуштра сақтар мен парсыларға ортақ әлемдегі тұңғыш “Авеста” кітабын жазғаны айтылады.
+              <strong>Дұрыс жауап: B.</strong>
+              Ғұндар өз ұрпақтарын ержүрек, алғыр, епті болуға және әскери-жауынгерлік өнерге тәрбиелеген.
               <div class="source">Дереккөз: Қалиев С. Этнопедагогика.</div>
             </div>
           </div>
 
           <div class="question" data-answer="D">
-            <h4>7. Ғұндар қай кезеңде сақ тайпалары мекендеген аумақтың мұрагерлері болды?</h4>
+            <h4>7. Ғұндардың тәрбиесінде әскери-жауынгерлік өнер қандай орын алды?</h4>
             <div class="options">
-              <label class="option"><input type="radio" name="q152" value="A"> A) б.з.д. VII ғасыр мен б.з. I ғ
-                      <section id="chapter-2-3" class="chapter">
+              <label class="option"><input type="radio" name="q152" value="A"> A) қосымша кәсіптік дағды ретінде</label>
+              <label class="option"><input type="radio" name="q152" value="B"> B) тұрмыстық салттың бір бөлігі ретінде</label>
+              <label class="option"><input type="radio" name="q152" value="C"> C) отбасылық тәрбиенің жеке бағыты ретінде</label>
+              <label class="option"><input type="radio" name="q152" value="D"> D) негізгі тәрбие мазмұнының өзегі ретінде</label>
+              <label class="option"><input type="radio" name="q152" value="E"> E) мерекелік ойын түрі ретінде</label>
+            </div>
+            <div class="explanation">
+              <strong>Дұрыс жауап: D.</strong>
+              Ғұндарда әскери-жауынгерлік өнер ұрпақты ерлікке, алғырлыққа, ептілікке және төзімділікке баулитын негізгі тәрбие өзегі болды.
+              <div class="source">Дереккөз: Қалиев С. Этнопедагогика.</div>
+            </div>
+          </div>
+
+          <div class="question" data-answer="A">
+            <h4>8. Көшпелі әскери тұрмыста бала қандай қасиеттерге ерте бейімделген?</h4>
+            <div class="options">
+              <label class="option"><input type="radio" name="q153" value="A"> A) суыққа, аштыққа, шөлге және қиындыққа төзуге</label>
+              <label class="option"><input type="radio" name="q153" value="B"> B) оқу, жазу, есептеу және шешен сөйлеуге</label>
+              <label class="option"><input type="radio" name="q153" value="C"> C) ән айту, күй тарту, өлең шығаруға</label>
+              <label class="option"><input type="radio" name="q153" value="D"> D) жер өңдеу, өнім жинау, сауда жасауға</label>
+              <label class="option"><input type="radio" name="q153" value="E"> E) рәсім өткізу, бата беру, салт орындауға</label>
+            </div>
+            <div class="explanation">
+              <strong>Дұрыс жауап: A.</strong>
+              Әскери-көшпелі тұрмыс балаға суыққа, аштыққа, шөлге, қиындыққа төзуге және жауынгерлік өмірге бейімделуге ықпал еткен.
+              <div class="source">Дереккөз: Қалиев С. Этнопедагогика.</div>
+            </div>
+          </div>
+
+          <div class="question" data-answer="E">
+            <h4>9. Сақтар мен ғұндар дәуіріндегі тәрбие кейінгі халық педагогикасымен қандай жағынан сабақтасады?</h4>
+            <div class="options">
+              <label class="option"><input type="radio" name="q154" value="A"> A) жазба оқу мен медреселік білім арқылы</label>
+              <label class="option"><input type="radio" name="q154" value="B"> B) құқықтық тәртіп пен мемлекеттік басқару арқылы</label>
+              <label class="option"><input type="radio" name="q154" value="C"> C) діни ілім мен сопылық көзқарас арқылы</label>
+              <label class="option"><input type="radio" name="q154" value="D"> D) қалалық мәдениет пен сауда қатынасы арқылы</label>
+              <label class="option"><input type="radio" name="q154" value="E"> E) еңбекке, ерлікке, төзімділікке және ептілікке тәрбиелеу арқылы</label>
+            </div>
+            <div class="explanation">
+              <strong>Дұрыс жауап: E.</strong>
+              Бұл дәуірдегі тәрбие кейінгі халық педагогикасындағы еңбекке, ерлікке, төзімділікке, ептілікке, дене шынықтыруға баулу идеяларымен сабақтасады.
+              <div class="source">Дереккөз: Қалиев С. Этнопедагогика.</div>
+            </div>
+          </div>
+
+          <div class="question" data-answer="C">
+            <h4>10. Ғұндардағы жауынгерлік тәрбие тұлғаның қандай сапаларын қалыптастыруға бағытталды?</h4>
+            <div class="options">
+              <label class="option"><input type="radio" name="q155" value="A"> A) сабырлылық, ізгілік, имандылық</label>
+              <label class="option"><input type="radio" name="q155" value="B"> B) білімділік, шешендік, парасаттылық</label>
+              <label class="option"><input type="radio" name="q155" value="C"> C) ержүректік, ептілік, төзімділік</label>
+              <label class="option"><input type="radio" name="q155" value="D"> D) қонақжайлық, бауырмалдық, мейірімділік</label>
+              <label class="option"><input type="radio" name="q155" value="E"> E) ұқыптылық, жинақылық, байсалдылық</label>
+            </div>
+            <div class="explanation">
+              <strong>Дұрыс жауап: C.</strong>
+              Ғұндардағы тәрбие мазмұнында ержүректік, ептілік, алғырлық, төзімділік сияқты жауынгерлік тұлға сапалары ерекше орын алған.
+              <div class="source">Дереккөз: Қалиев С. Этнопедагогика.</div>
+            </div>
+          </div>
+
+          <div class="question" data-answer="B">
+            <h4>11. Сақтар мен ғұндардағы еңбек тәрбиесі қандай әрекеттер арқылы көрінді?</h4>
+            <div class="options">
+              <label class="option"><input type="radio" name="q156" value="A"> A) медреседе оқу, жазу, есептеу арқылы</label>
+              <label class="option"><input type="radio" name="q156" value="B"> B) мал бағу, металл өңдеу, бұйым жасау арқылы</label>
+              <label class="option"><input type="radio" name="q156" value="C"> C) шешендік сөз айту, билік жүргізу арқылы</label>
+              <label class="option"><input type="radio" name="q156" value="D"> D) кітап жазу, трактат құрастыру арқылы</label>
+              <label class="option"><input type="radio" name="q156" value="E"> E) діни рәсім орындау, мінәжат ету арқылы</label>
+            </div>
+            <div class="explanation">
+              <strong>Дұрыс жауап: B.</strong>
+              Мал бағу, металл игеру, қару-жарақ пен зергерлік бұйым жасау ұрпақты еңбекке, шеберлікке және тұрмысқа бейімдейтін тәрбие мазмұнын көрсетеді.
+              <div class="source">Дереккөз: Қалиев С. Этнопедагогика.</div>
+            </div>
+          </div>
+
+          <div class="question" data-answer="D">
+            <h4>12. Бұл бөлімнің педагогикалық мәні неде?</h4>
+            <div class="options">
+              <label class="option"><input type="radio" name="q157" value="A"> A) еңбекке баулудың тұрмыстық маңызын ғана көрсетуінде</label>
+              <label class="option"><input type="radio" name="q157" value="B"> B) дене шынықтырудың жеке дағды ретіндегі орнын ашуында</label>
+              <label class="option"><input type="radio" name="q157" value="C"> C) эстетикалық талғамды қолөнермен ғана байланыстыруында</label>
+              <label class="option"><input type="radio" name="q157" value="D"> D) еңбек, дене, эстетикалық, ерлік және төзімділік тәрбиесін тұтас түсіндіруінде</label>
+              <label class="option"><input type="radio" name="q157" value="E"> E) жауынгерлік тәрбие мен тұрмыстық дағдыны бөлек қарастыруында</label>
+            </div>
+            <div class="explanation">
+              <strong>Дұрыс жауап: D.</strong>
+              Бұл бөлімнің педагогикалық мәні сақтар мен ғұндар дәуіріндегі еңбек, дене, эстетикалық, ерлік және төзімділік тәрбиесінің бір-бірімен байланысын түсіндіруде.
+              <div class="source">Дереккөз: Қалиев С. Этнопедагогика.</div>
+            </div>
+          </div>
+
+          <div class="actions">
+            <button class="btn btn-primary" onclick="checkQuiz('quiz-2-2')">Нәтижені көрсету</button>
+            <button class="btn btn-soft" onclick="resetQuiz('quiz-2-2')">Қайта белгілеу</button>
+          </div>
+          <div class="result-box" id="result-quiz-2-2"></div>
+        </div>
+      </section>
+
+      <section id="chapter-2-3" class="chapter">
         <div class="chapter-card">
           <div class="chapter-header">
             <h2>2.3. Ұлы Түркі қағанаты және оның тәлім-танымдық мұралары</h2>
